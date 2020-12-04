@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule transactitons</title>
+    <link rel="stylesheet" href="./css/signTxn.css">
+    <script src="./js/web3.js"></script>
+    <!-- <script defer type="module" src="./js/index.js"></script>  -->
+    <script defer type="module" src="./js/signtxn/index.js"></script>
+</head>
+<body>
+    <div class="center container">
+        <h3 class="center">Sign Message</h3>
+        <form action="" class="center">
+            <input type="text" class="message-to-sign" placeholder="Enter message to sign" />
+            <button class="submit-sign-message" type="submit">Submit</button>
+            <div class="center message-signature">
+                <p class="msg-hash">Message signed: </p>
+                <p class="signature">signature: </p>
+            </div>
+        </form>
+
+        <h3 class="center">Verify signed messages</h3>
+        <form action="" class="verify">
+            <input type="text" class="verify-sig" placeholder="Enter signature" />
+            <button class="verify-message" type="submit">Submit</button>
+
+            <p class="address-that-signed">Address: </p>
+
+        </form>
+    </div>
+</body>
+</html>
